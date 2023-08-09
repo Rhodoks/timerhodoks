@@ -1,0 +1,11 @@
+{
+    "cluster" : [
+        {
+            "id" : 0,
+            "ip" : "127.0.0.1",
+            "raftPort" : 18000,
+            "httpPort" : 18001,
+            "grpcPort" : 18002
+        }
+    ]
+}

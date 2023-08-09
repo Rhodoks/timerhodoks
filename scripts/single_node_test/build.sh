@@ -1,0 +1,1 @@
+go build ../../cmd/node/node.go

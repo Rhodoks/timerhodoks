@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package="./;proto";
+package proto;
+
+service GrpcWorker {
+	rpc Execute (ExecuteRequest) returns (ExecuteReply) {}
+}
+
+// 幂等信息（JobId, TriggerTime)
+// 执行信息（ExecutorType, ExecutorInfo）
+message ExecuteRequest {
+	uint32 		JobId 			= 1;
+	uint32 		TriggerTime 	= 2;
+	string 		ExecutorType 	= 3;
+	string 		ExecutorInfo 	= 4;
+}
+
+message ExecuteReply {
+	int32 		Ok 				= 1;
+}

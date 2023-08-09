@@ -1,0 +1,22 @@
+{
+    "cluster" : [
+        {
+            "ip" : "127.0.0.1",
+            "raftPort" : 18000,
+            "httpPort" : 18001,
+            "grpcPort" : 18002
+        },
+        {
+            "ip" : "127.0.0.1",
+            "raftPort" : 28000,
+            "httpPort" : 28001,
+            "grpcPort" : 28002
+        },
+        {
+            "ip" : "127.0.0.1",
+            "raftPort" : 38000,
+            "httpPort" : 38001,
+            "grpcPort" : 38002
+        }
+    ]
+}

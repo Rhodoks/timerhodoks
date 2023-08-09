@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package="./;proto";
+package proto;
+
+service Coordinator {
+  rpc GetCoordinatingInfo(EmptyMessage) returns (CoordinatingInfoReply) {}
+  rpc UpdateAllocation(AllocationRequest) returns (EmptyMessage) {}
+}
+
+message EmptyMessage {
+
+}
+
+message CoordinatingInfoReply {
+  bytes JobAllocation = 1;
+  int32 load = 2;
+}
+
+message AllocationRequest {
+  bytes JobAllocation = 1;
+}
